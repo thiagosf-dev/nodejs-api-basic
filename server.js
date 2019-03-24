@@ -23,4 +23,4 @@ requireDir('./src/models');
 // Carregando rotas
 app.use('/api', require('./src/routes'));
 
-app.listen(3000, () => "API rodando em http://localhost:3000");
+app.listen(3000);

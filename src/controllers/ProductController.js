@@ -9,12 +9,11 @@ module.exports = {
       } = req.query;
 
       // const products = await Product.find();
-      const products = await Product.paginate({}, {
+
+      return res.json(await Product.paginate({}, {
          page,
          limit: 5,
-      });
-
-      return res.json(products)
+      }));
    },
 
    async show(req, res) {
@@ -22,9 +21,7 @@ module.exports = {
    },
 
    async store(req, res) {
-      const product = await Product.create(req.body);
-
-      return res.json(product);
+      return res.json(await Product.create(req.body));
    },
 
    async update(req, res) {
