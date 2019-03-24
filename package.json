@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Thiagosf-dev/nodejs-api-basic/issues"
   },
-  "homepage": "https://github.com/Thiagosf-dev/nodejs-api-basic#readme"
+  "homepage": "https://github.com/Thiagosf-dev/nodejs-api-basic#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
