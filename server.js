@@ -13,9 +13,18 @@ mongoose.connect('mongodb://localhost:27017/nodeapi', {
 // Registrando um model no banco
 requireDir('./src/models');
 
+const Product = mongoose.model('Product');
+
 // Primeira rota
 app.get('/', (req, res) => {
-    res.send("Bem vindo");
+
+    Product.create({
+        title: 'NodeJS',
+        description: 'Curso de NodeJS básico',
+        url: 'http://localhost:3000'
+    });
+
+    return res.send("Bem vindo");
 })
 
 app.listen(3000);
