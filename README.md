@@ -6,12 +6,12 @@
 
 - <https://nodejs.org/en/>
 
-**Clonando o projeto**  
+#### Clonando o projeto
 _Dentro da pasta em que deseja salvar o projeto, execute o seguinte comando:_
 
     # git clone https://github.com/Thiagosf-dev/nodejs-api-basic.git
 
-**Instalando as dependências do projeto**  
+#### Instalando as dependências do projeto
 _Dentro pasta do projeto clonado, execute o seguinte comando:_
 
     # npm install
