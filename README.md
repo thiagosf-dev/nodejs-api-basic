@@ -15,3 +15,8 @@ _Dentro da pasta em que deseja salvar o projeto, execute o seguinte comando:_
 _Dentro pasta do projeto clonado, execute o seguinte comando:_
 
     # npm install
+
+_Crie um arquivo com o nome \".gitignote\" na raiz do projeto e dentro dele escreva as seguintes linhas:
+
+* .gitignore
+* node_modules
