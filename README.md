@@ -16,7 +16,7 @@ _Dentro pasta do projeto clonado, execute o seguinte comando:_
 
     # npm install
 
-_Crie um arquivo com o nome \".gitignote\" na raiz do projeto e dentro dele escreva as seguintes linhas:
+_Crie um arquivo com o nome \".gitignore\" na raiz do projeto e dentro dele escreva as seguintes linhas:_
 
 * .gitignore
 * node_modules
