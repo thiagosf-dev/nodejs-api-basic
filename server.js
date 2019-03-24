@@ -5,15 +5,18 @@ const requireDir = require('require-dir');
 // Iniciando o app
 const app = express();
 
+// Permitir enviar dados para a app no formato JSON
+app.use(express.json());
+
 // Iniciando o banco de dados
 mongoose.connect('mongodb://localhost:27017/nodeapi', {
     useNewUrlParser: true
 });
 
-// Registrando um model no banco
+// Registrando uma pasta de models no banco
 requireDir('./src/models');
 
 // Carregando rotas
 app.use('/api', require('./src/routes'));
 
-app.listen(3000);
+app.listen(3000, () => "API rodando em http://localhost:3000");
